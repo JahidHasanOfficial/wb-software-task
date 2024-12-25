@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/420020973_1708149626360372_349617027337025904_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHnaQW_fCq2SK3afd6GFlgoG1LNu44DjmUbUs27jgOOZdURimmW3RHWriiN2Ulkm8DeJwt9xINZ_f3_pQS3veGC&_nc_ohc=qtfvN6XkdAgQ7kNvgHw8RcC&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=A_wVCZZeDPSTsPutZn6vK-f&oh=00_AYCm0sf7uH1PTmc_yeihudCDM5MZUJ9qw6BrzwciZM4Pxw&oe=67664AA6" xml:lang="en-US" lang="en-US">
+<html>
 
 <head>
     <title>E-Commerce</title>
-    <meta charset="utf-8">
+    {{-- <meta charset="utf-8">
     <meta name="author" content="themesflat.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animation.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('font/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('icon/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon.ico') }}">
+    {{-- <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon.ico') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/sweetalert.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
     @stack('styles')
@@ -40,7 +40,15 @@
                     </div>
                     <div class="center">
                         <div class="center-item">
-                            <div class="center-heading">Main Home</div>
+                           
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="{{ url('/') }}" class="">
+                                        <div class="icon"><i class="icon-grid"></i></div>
+                                        <div class="text">Frontend</div>
+                                    </a>
+                                </li>
+                            </ul>
                             <ul class="menu-list">
                                 <li class="menu-item">
                                     <a href="{{ route('admin.index') }}" class="">
